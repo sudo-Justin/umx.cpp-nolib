@@ -3,18 +3,18 @@
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
-#include <libnyquist/Common.h>
-#include <libnyquist/Decoders.h>
-#include <libnyquist/Encoders.h>
+//#include <libnyquist/Common.h>
+//#include <libnyquist/Decoders.h>
+//#include <libnyquist/Encoders.h>
 #include <memory>
 #include <string>
 #include <unsupported/Eigen/FFT>
 #include <vector>
 
-using namespace nqr;
+//using namespace nqr;
 
 static constexpr float PI = 3.14159265359F;
-
+/*
 Eigen::MatrixXf umxcpp::load_audio(std::string filename)
 {
     // load a wav file with libnyquist
@@ -99,6 +99,7 @@ void umxcpp::write_audio_file(const Eigen::MatrixXf &waveform,
                            fileData.get(), filename);
     std::cout << "Encoder Status: " << encoderStatus << std::endl;
 }
+*/
 
 // forward declaration of inner stft
 void stft_inner(struct umxcpp::stft_buffers &stft_buf, Eigen::FFT<float> &cfg);

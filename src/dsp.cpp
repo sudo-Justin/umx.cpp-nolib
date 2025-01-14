@@ -236,7 +236,7 @@ void istft_inner(struct umxcpp::stft_buffers &stft_buf, Eigen::FFT<float> &cfg)
               stft_buf.padded_waveform_mono_out.end(), 0.0f);
 
     // Loop over the input with a stride of (hop_size)
-    for (std::size_t start = 0;
+    for (int start = 0;
          start < stft_buf.nb_frames * umxcpp::FFT_HOP_SIZE;
          start += umxcpp::FFT_HOP_SIZE)
     {
